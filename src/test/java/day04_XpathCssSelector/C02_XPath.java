@@ -22,9 +22,9 @@ public class C02_XPath {
 
      //   2- Add Element butonuna basin
         driver.findElement(By.xpath("//button[@onclick='addElement()']")).click();
-
+driver.findElement(By.id("elements"));
      //   3- Delete butonu’nun gorunur oldugunu test edin
-        WebElement deleteButonu=driver.findElement(By.xpath("//button[text()='Delete']"));
+      /*  WebElement deleteButonu=driver.findElement(By.xpath("//button[text()='Delete']"));
         if(deleteButonu.isDisplayed()){
             System.out.println("Delete butonu gorunuyor testi PASS");
         }else{
@@ -43,7 +43,7 @@ public class C02_XPath {
         }else{
             System.out.println("Add yazisinin gorunurluk testi FAILED");
         }
-
+*/
     }
 
 

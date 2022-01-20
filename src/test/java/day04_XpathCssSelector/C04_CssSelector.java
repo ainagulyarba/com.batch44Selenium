@@ -12,7 +12,7 @@ public class C04_CssSelector {
         WebDriver driver =new ChromeDriver();
     //  1 ) Bir class oluşturun : Locators_css
     //  2 ) Main method oluşturun ve aşağıdaki görevi tamamlayın.
-    //          a. Verilen web sayfasına gidin. http://a.testaddressbook.com/sign_in
+    //  a. Verilen web sayfasına gidin. http://a.testaddressbook.com/sign_in
         driver.get("http://a.testaddressbook.com/sign_in");
 
     //  b. Locate email textbox
