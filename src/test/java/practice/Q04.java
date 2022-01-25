@@ -1,15 +1,13 @@
 package practice;
 
-import net.jodah.failsafe.internal.util.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class Q06 {
+public class Q04 {
     public static void main(String[] args) {
 
 // ...Exercise4...

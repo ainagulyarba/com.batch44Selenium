@@ -6,56 +6,48 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.awt.image.Kernel;
 import java.time.Duration;
 
 public class Q03 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         // ...Exercise3...
         System.setProperty("webdriver.chrome.driver", "src/driver/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
-      /*
-
-// go to url : https://www.techlistic.com/p/selenium-practice-form.html
+        // go to url : https://www.techlistic.com/p/selenium-practice-form.html
         driver.get("https://www.techlistic.com/p/selenium-practice-form.html");
-       driver.manage().deleteAllCookies();
-     // driver.findElement(By.xpath("//a[@data-cc-event='click:dismiss']")).click();
-//fill the firstname
-      driver.findElement(By.name("firstname")).sendKeys("ainagul");
-     WebElement lastname=   driver.findElement(By.name("lastname"));
-     lastname.sendKeys("yarba");
-        lastname.sendKeys(Keys.PAGE_DOWN);
-driver.findElement(By.xpath("//input[@id='sex-0']")).click();
-driver.findElement(By.xpath("//input[@id='sex-0']")).click();
-driver.findElement(By.id("By.xpath("//input[@id='datepicker']")).sendKeys("10/04/2021");
-WebElement prof= driver.findElement(By.id("profession-1"));
-prof.click();
-prof.sendKeys(Keys.PAGE_DOWN);
-//driver.findElement(By.id(""))
+        Thread.sleep(3000);
+      WebElement cookie= driver.findElement(By.xpath("//a[@class='cc_btn cc_btn_accept_all']"));
+      cookie.click();
+        driver.findElement(By.xpath("(//a[@class='cookie-choices-button'])[2]")).click();
+      //  driver.findElement(By.xpath("(//a[@class='cookie-choices-button'])[2]")).click();
+        //fill the firstname
+        driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys("ainagul");
 
-//fill the firstname
+        //fill the lastname
+       WebElement lastname= driver.findElement(By.xpath("//input[@name='lastname']"));
+             lastname.sendKeys("yarba"+ Keys.PAGE_DOWN);
 
-//check the gender
+        //check the gender
+        driver.findElement(By.xpath("//input[@id='sex-1']")).click();
+        //check the experience
+        driver.findElement(By.xpath("//input[@id='exp-1']")).click();
+        //fill the date
+        driver.findElement(By.xpath("//input[@id='datepicker']")).sendKeys("10/09/2021");
+        //choose your profession -> Automation Tester
 
-//check the experience
+        //choose your tool -> Selenium Webdriver
 
-//fill the date
-
-//choose your profession -> Automation Tester
-
-//choose your tool -> Selenium Webdriver
-
-//choose your continent -> Antartica
-//choose your command  -> Browser Commands
-//click submit button
+        //choose your continent -> Antartica
+        //choose your command  -> Browser Commands
+        //click submit button
 
 
 
-
-        System.setProperty("webdriver.chrome.driver","src/driver/chromedriver.exe" );
+/*      System.setProperty("webdriver.chrome.driver","src/driver/chromedriver.exe" );
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -72,11 +64,6 @@ prof.sendKeys(Keys.PAGE_DOWN);
         driver.findElement(By.xpath("//input[@id='tool-2']")).click();
         driver.findElement(By.xpath("//select[@id='continents']")).sendKeys("Africa");
         driver.findElement(By.xpath("//option[normalize-space()='Browser Commands']")).click();
-
-
-
-
-
 */
 
 
