@@ -1,4 +1,4 @@
-package practice;
+package day03_WebelementsLocators.practice;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

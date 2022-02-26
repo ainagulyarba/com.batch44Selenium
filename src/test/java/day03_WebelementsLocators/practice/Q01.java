@@ -1,4 +1,4 @@
-package practice;
+package day03_WebelementsLocators.practice;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

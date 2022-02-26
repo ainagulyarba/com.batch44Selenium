@@ -1,4 +1,4 @@
-package practice;
+package day03_WebelementsLocators.practice;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,7 +12,7 @@ public class Q02 {
         //  2-java class'imiza chromedriver.exe'yi tanitalim
         //  3-driver'in tum ekrani kaplamasini saglayalim
         //  4-driver'a sayfanın yuklenmesini 10.000 milisaniye (10 saniye) boyunca beklesini
-        //    söyleyelim. Eger oncesinde sayfa yuklenirse, beklemeyi bıraksin.
+        //  söyleyelim. Eger oncesinde sayfa yuklenirse, beklemeyi bıraksin.
         System.setProperty("webdriver.chrome.driver", "src/driver/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
